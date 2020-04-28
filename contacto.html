@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Empresa- Vilcapoma</title>
+    
+    <link rel="icon" type="image/png" href="https://blog.educacionit.com/wp-content/uploads/2018/09/shutterstock-10338536170938-620x354-01-750x410.jpg" />  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+    form {
+        margin: 0 auto;
+        width: 400px;
+        padding: 2em;
+        border: 1px solid #CCC;
+        border-radius: 1em;
+      }
+      
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      form li + li {
+        margin-top: 1em;
+      }
+      
+      input, 
+      textarea {
+
+        font: 1em sans-serif;
+      
+        width: 300px;
+        box-sizing: border-box;
+        border: 1px solid #999;
+      }
+      
+      input:focus, 
+      textarea:focus {
+        border-color: #000;
+      }
+      
+      textarea {
+        vertical-align: top;
+      
+        height: 5em;
+      }
+      
+      </style>
+   
+</head>
+<body> 
+    <nav class="navbar navbar-dark bg-dark">
+        <a href="index.html" class="navbar-brand">INICIO</a>
+        <a href="nosotros.html" class="navbar-brand">NOSOTROS</a>
+        <a href="servicios.html" class="navbar-brand">SERVICIOS QUE OFRECEMOS</a>
+        <a href="contacto.html" class="navbar-brand">CONTACTO</a>
+    </nav>
+    
+
+    <div id="nav">
+    </div>
+    <div class="container my-4">
+
+        <div class="row pt-5" align="center">
+            <div class="col-md-12">
+                <h2 align="center">Contactenos</h2>
+                <hr>
+                <h3>Completar el formulario y enviar</h3>
+                <hr>
+            </div>
+        </div>
+
+        <div class="container my-4"> 
+            <form action="recuperardatos" method="post" id="contacto">
+                <div class="form-group">
+                <ul>
+                 <li>
+                   <label for="name">Nombre Completo:</label>
+                   <input type="text" id="name" name="name" class="form-control">
+                 </li>
+                 <li>
+                   <label for="mail">Correo:</label>
+                   <input type="email" id="mail" name="mail" class="form-control">
+                 </li>
+                 <li>
+                    <label for="phone">Teléfono móvil:</label>
+                    <input type="number" maxlength="9" class="form-control" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" id="number" name="number" />
+                  </li>
+                 <li>
+                <li>
+                    <label for="nacimiento">Fecha de nacimiento:</label>
+                    <input type="date" id="date" name="date" class="form-control">
+                </li>
+                 <li>
+                   <label for="msg">Mensaje:</label>
+                   <textarea id="msg" name="msg" class="form-control"></textarea>
+                 </li>
+                 <li class="button" align="center">
+                    <button type="button" class="btn btn-primary">Enviar</button>
+                  </li>
+                </ul>
+            </div>
+               </form>
+        </div>
+    </div>
+</body>
+</html>
