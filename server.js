@@ -117,13 +117,9 @@ const server = http.createServer((req, res) => {
                     res.end();
                 });
         }else {
-            url == "/404.html"
-            res.writeHead(404,{'Content-Type' : 'text/html'});
-                fs.readFile('/404.html',function(error, html){
-                    res.write(html);
-                    res.end();
-                    });
-                }
+            res.writeHead(404,{'Content-type':'text/html'});
+            fs.createReadStream(__dirname+'/404.html').pipe(res);
+            }
     }
 });
 server.listen(port,()=>{
