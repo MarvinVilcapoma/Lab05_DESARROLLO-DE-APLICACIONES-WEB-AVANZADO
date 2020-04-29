@@ -15,7 +15,7 @@ const server = http.createServer((req, res) => {
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
             <title>Empresa - Vilcapoma</title>   
-            <link rel="icon" type="image/png" href="https://image.flaticon.com/icons/png/512/625/625169.png"/>
+            <link rel="icon" type="image/png" href="https://blog.educacionit.com/wp-content/uploads/2018/09/shutterstock-10338536170938-620x354-01-750x410.jpg" />  
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
             <style>
     form {
