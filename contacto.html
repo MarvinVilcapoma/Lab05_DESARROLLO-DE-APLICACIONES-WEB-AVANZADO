@@ -74,36 +74,36 @@
         </div>
 
         <div class="container my-4"> 
-            <form action="recuperardatos" method="post" id="contacto">
-                <div class="form-group">
-                <ul>
-                 <li>
-                   <label for="name">Nombre Completo:</label>
-                   <input type="text" id="name" name="name" class="form-control">
-                 </li>
-                 <li>
-                   <label for="mail">Correo:</label>
-                   <input type="email" id="mail" name="mail" class="form-control">
-                 </li>
-                 <li>
-                    <label for="phone">Teléfono móvil:</label>
-                    <input type="number" maxlength="9" class="form-control" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" id="number" name="number" />
-                  </li>
-                 <li>
-                <li>
-                    <label for="nacimiento">Fecha de nacimiento:</label>
-                    <input type="date" id="date" name="date" class="form-control">
-                </li>
-                 <li>
-                   <label for="msg">Mensaje:</label>
-                   <textarea id="msg" name="msg" class="form-control"></textarea>
-                 </li>
-                 <li class="button" align="center">
-                    <button type="button" class="btn btn-primary">Enviar</button>
-                  </li>
-                </ul>
+          <form method="POST">
+          <div class="form-group">
+            
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Nombre completo</label>
+            <input type="text" class="form-control" name="name" placeholder="Ingese su nombre" required>
+          </div>
+          <div class="form-group">
+              <label for="exampleInputPassword1">Correo electrónico</label>
+              <input type="email" class="form-control" name="mail" placeholder="Ingese su correo electrónico" required>
             </div>
-               </form>
+
+            <div class="form-group">
+                <label for="exampleInputPassword1">Teléfono móvil</label>
+                <input type="number" class="form-control" name="number" placeholder="Ingese su número de celular" maxlength="9" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" required>
+              
+              </div>
+
+              <div class="form-group">
+                  <label for="exampleInputPassword1">Fecha de nacimiento</label>
+                  <input type="date" class="form-control" name="date" min="1950-01-01" max="2010-01-01" placeholder="Ingrese su fecha de nacimiento" required>
+                </div>
+
+              <div class="form-group">
+                  <label for="exampleInputPassword1">Mensaje</label>
+                  <textarea type="text" class="form-control" name="msg" placeholder="Mensaje" required></textarea>
+          </div>
+                  <button type="submit" class="btn btn-primary btn-block ">Submit</button>
+        </form>
         </div>
     </div>
 </body>
